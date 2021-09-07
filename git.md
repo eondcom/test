@@ -34,3 +34,20 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 
 ```
+
+To push the current branch and set the remote as upstream, use
+```
+    git push --set-upstream test master
+```
+딱 한번만 페어링 해주면 된다.
+로컬저장소와 원격저장소 브랜치 이름이 달라서..
+
+정리
+git init
+git add git.txt
+git commit -m "first commit"
+git config --global user.email "eond@eond.com"
+git config --global user.name "eondcom"
+git remote add test https://github.com/eondcom/test.git
+git push --set-upstream test master
+git pull
